@@ -1,26 +1,21 @@
 # monorepo-vue-starter
 
-现代化 Monorepo 架构的 Vue 起始项目，基于 Vite、Vue 3、TypeScript，内置 TailwindCSS 原子化方案，采用 pnpm 作为 Monorepo 包管理工具，适合中大型团队高效开发与协作。
+现代化 Monorepo 架构的 Vue 起始项目，基于 Vite、Vue 3、TypeScript，内置 TailwindCSS 原子化方案，采用 pnpm 作为包管理工具，适合中大型团队高效开发与协作。
 
-## 项目特性
+## 项目亮点
 
-- **Monorepo 架构**：采用 pnpm workspace 管理多包，便于模块复用与团队协作。
+- **Monorepo 架构**：基于 pnpm workspace，支持多包统一管理，便于模块复用与团队协作。
 - **Vue 3 + Vite**：极速开发体验，支持最新 Composition API。
 - **TypeScript 全量类型支持**：集成 vue-tsc，类型安全无忧。
 - **TailwindCSS 原子化 CSS**：极致灵活的样式方案，支持自定义扩展。
-- **内置通用工具包**：
-  - `@monorepo-vue-starter/axios`：高可用 axios 封装，支持全局配置、拦截器、自动重试等。
-  - `@monorepo-vue-starter/pinia`：Pinia 状态管理二次封装，集成持久化与插件机制。
 - **严格代码规范**：集成 ESLint、Prettier、Commitlint、Husky，保障团队代码质量。
 - **现代化开发体验**：支持 VSCode + Volar，类型推断与高亮无缝体验。
 
 ## 目录结构
 
-```
+```text
 monorepo-vue-starter/
-├── packages/                # Monorepo 子包
-│   ├── axios/               # axios 封装库
-│   └── pinia/               # pinia 封装库
+├── packages/                # Monorepo 子包（可扩展自定义工具包）
 ├── src/                     # 主应用源码
 │   ├── assets/              # 静态资源与全局样式（已引入 TailwindCSS）
 │   ├── components/          # 通用组件
@@ -38,8 +33,8 @@ monorepo-vue-starter/
 
 ### 环境要求
 
-- Node.js 18+
-- [pnpm](https://pnpm.io/) 10+（Monorepo 依赖管理）
+- Node.js 18 及以上
+- [pnpm](https://pnpm.io/) 10 及以上
 
 ### 安装依赖
 
@@ -62,15 +57,18 @@ pnpm run type-check
 
 ## 推荐开发工具
 
+### 推荐开发工具
+
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)（请禁用 Vetur）
 
 ## 依赖说明
 
-- **主依赖**：`vue`、`vue-router`、`@vueuse/core`
-- **开发依赖**：`vite`、`@vitejs/plugin-vue`、`tailwindcss`、`eslint`、`prettier`、`husky`、`vue-tsc` 等
-- **子包依赖**：
-  - `@monorepo-vue-starter/axios`：`axios`、`axios-retry`、`qs`
-  - `@monorepo-vue-starter/pinia`：`pinia`、`pinia-plugin-persistedstate`、`zipson`
+- **主依赖**：
+  - `vue`、`vue-router`、`@vueuse/core`
+- **开发依赖**：
+  - `vite`、`@vitejs/plugin-vue`、`tailwindcss`、`eslint`、`prettier`、`husky`、`vue-tsc`、`commitlint`、`lint-staged`、`onchange`、`typescript` 等
+- **工具包依赖**（如有）：
+  - `@ethan-utils/axios`、`@ethan-utils/pinia` 等
 
 ## 代码规范与提交
 

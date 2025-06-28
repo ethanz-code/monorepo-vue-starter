@@ -15,7 +15,7 @@ export default defineConfigWithVueTs(
     files: ['**/*.{ts,mts,tsx,vue}'],
   },
 
-  globalIgnores(['**/dist/**', '**/node_modules/**', './changeset/**', 'pnpm-lock.yaml', '*.md']),
+  globalIgnores(['**/dist/**', '**/node_modules/**', 'pnpm-lock.yaml', '*.md']),
 
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
