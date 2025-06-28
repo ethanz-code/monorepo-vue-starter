@@ -1,5 +1,5 @@
 import { ref, computed } from 'vue';
-import { defineStore } from '@monorepo-vue-starter/pinia';
+import { defineStore } from '@ethan-utils/pinia';
 
 export const useCounterStore = defineStore('counter', () => {
   const count = ref(0);
