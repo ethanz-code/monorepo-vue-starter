@@ -27,7 +27,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/prompt-cli": "^19.8.1",
-    "@ethan-utils/axios": "^1.0.2",
+    "@ethan-utils/axios": "^2.0.1",
     "@ethan-utils/pinia": "^1.0.2",
     "@tailwindcss/vite": "^4.1.10",
     "@tsconfig/node22": "^22.0.1",
