@@ -1,21 +1,35 @@
-MIT License
+软件使用许可协议
 
-Copyright (c) Changesets team and other contributors
+版权所有 © 2026 XXX 科技有限公司（以下简称“XX”）。保留一切权利。
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+在未取得 XX 事先书面授权的情况下，任何个人或组织不得以任何形式复制、拷贝、修改、分发、再许可、出售、出租、托管、提供下载或以其他方式向第三方提供本软件的全部或部分源代码、目标代码及相关文档。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+一、权利归属
+1. 本软件的全部知识产权，包括但不限于源代码、目标代码、界面设计、文档资料及其任何衍生作品，均由 XX 享有。
+2. 除非另有书面约定，本软件不向任何第三方转让任何形式的知识产权，仅在授权范围内提供有限的使用许可。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+二、授权与使用
+1. 仅在与 XX 签署有效书面授权协议并严格遵守该协议条款的前提下，第三方方可在约定范围内使用本软件。
+2. 未经 XX 事先书面同意，第三方不得：
+   (1) 获取、保存或分发本软件的源代码副本；
+   (2) 对本软件进行修改、反向工程、反编译、反汇编或基于本软件创建衍生作品；
+   (3) 将本软件或其修改版本以任何形式向第三方提供，包括但不限于 SaaS 形式、托管服务或集成在商用产品中。
+
+三、禁止行为
+1. 禁止删除、修改或隐藏本软件中的任何版权声明、商标或其他权利标识。
+2. 禁止将本软件用于任何违法或未经授权的用途。
+3. 禁止以可能损害 XX 合法权益的任何方式使用本软件。
+
+四、免责声明
+1. 本软件按“现状”提供，XX 不对本软件的适销性、特定用途适用性、稳定性、可靠性或不侵权作出任何明示或暗示的保证。
+2. 在适用法律允许的最大范围内，因使用或无法使用本软件而导致的任何直接或间接损失、利润损失、业务中断或数据丢失，XX 概不承担任何责任。
+
+五、适用法律与争议解决
+1. 本许可协议的订立、执行与解释以及与本许可协议有关的争议，均适用中华人民共和国法律。
+2. 因本许可协议引起的或与本许可协议有关的任何争议，双方应首先友好协商解决；协商不成的，任何一方均可向 XX 注册地有管辖权的人民法院提起诉讼。
+
+六、其他
+1. XX 有权根据实际需要单方面修改本许可协议条款，并在更新版本中予以公示；除非另有明确说明，新条款不溯及既往。
+2. 如本许可协议的任何条款被认定为无效或不可执行，该条款应在必要的最小范围内被限缩或删除，而不影响其他条款的有效性和可执行性。
+
+除非事先获得 XX 明确的书面授权，任何对本软件的使用均视为未经授权的非法使用，XX 有权依法追究相关责任。
