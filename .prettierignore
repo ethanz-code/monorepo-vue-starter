@@ -1,6 +1,7 @@
 # 🔒 Ignore lock and workspace configuration files
 pnpm-lock.yaml
 pnpm-workspace.yaml
+bun.lock
 
 # 📦 Ignore dependencies
 node_modules/
