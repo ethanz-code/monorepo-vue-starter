@@ -1,6 +1,28 @@
 # monorepo-vue-starter
 
+最近更新时间：Jan 18 00:02 ｜ 微信：SXB06999
+
 现代化 Monorepo 架构的 Vue 起始项目，基于 **Bun**、**Vite (Rolldown)**、**Vue 3**、**TypeScript**，内置 **TailwindCSS v4** 原子化方案，采用 **Bun** 作为包管理工具，适合中大型团队高效开发与协作。
+
+## 目录
+
+- [monorepo-vue-starter](#monorepo-vue-starter)
+  - [目录](#目录)
+  - [项目亮点](#项目亮点)
+  - [目录结构](#目录结构)
+  - [快速开始](#快速开始)
+    - [环境要求](#环境要求)
+    - [安装依赖](#安装依赖)
+    - [代码检查与格式化](#代码检查与格式化)
+    - [类型检查](#类型检查)
+    - [启动开发服务器](#启动开发服务器)
+    - [构建生产环境](#构建生产环境)
+  - [推荐开发工具](#推荐开发工具)
+  - [依赖说明](#依赖说明)
+  - [代码规范与提交](#代码规范与提交)
+  - [进阶用法](#进阶用法)
+  - [使用 Ant Design Vue v4.x 时的兼容提示](#使用-ant-design-vue-v4x-时的兼容提示)
+  - [参考文档](#参考文档)
 
 ## 项目亮点
 
@@ -99,6 +121,33 @@ bun run build
 - 可在 `packages/` 目录下扩展自定义工具包
 - TailwindCSS v4 配置更加精简，直接在 CSS 中使用 `@theme`
 - 支持多环境配置与环境变量注入
+
+如果你在项目中引入 `@ethan-utils/pinia` 并使用 `persist` 参数进行状态持久化，需要注意这是基于 `localStorage` 的实现，这意味着整个应用只能以 **客户端渲染（CSR）** 方式运行，不适合 SSR 或静态预渲染等服务端输出场景。
+
+## 使用 Ant Design Vue v4.x 时的兼容提示
+
+如果未来 fork 本项目并计划使用 `ant-design-vue` 的 **v4.x** 版本，需要额外处理 Tailwind v4 与该组件库的样式兼容问题，建议按以下步骤配置：
+
+1. 在 `src/assets/main.css` 中调整 Tailwind 的引入与 Layer 顺序，例如：
+
+```css
+@layer theme, base, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import 'tailwindcss/utilities.css' layer(utilities);
+```
+
+以上配置等于放弃 Tailwind 的预检（preflight）对浏览器默认样式的重置，并通过显式的 Layer 排序来减少与 Ant Design Vue v4.x 样式的冲突。
+
+2. 在 `src/main.ts` 中，确保在 `import '@/assets/main.css';` 之后增加 Ant Design Vue 的样式重置：
+
+```ts
+import '@/assets/main.css';
+import 'ant-design-vue/dist/reset.css';
+```
+
+这样可以让 Ant Design Vue 的基础样式生效，同时避免与 Tailwind v4 预设样式产生过多覆盖和竞态。
 
 ## 参考文档
 

@@ -3,6 +3,9 @@ import { createApp } from 'vue';
 import '@/assets/main.css';
 import App from './App.vue';
 import router from './router';
+
+import 'pinia-plugin-persistedstate';
+
 import { createRequest } from '@ethan-utils/axios';
 
 // Initialize the API client with the base URL

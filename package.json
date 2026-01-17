@@ -58,6 +58,7 @@
     "npm-run-all2": "^8.0.4",
     "onchange": "^7.1.0",
     "oxlint": "^1.39.0",
+    "pinia-plugin-persistedstate": "^4.7.1",
     "prettier": "3.8.0",
     "tailwindcss": "^4.1.18",
     "typescript": "~5.9.3",
