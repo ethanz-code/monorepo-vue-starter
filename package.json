@@ -12,7 +12,8 @@
     "lint:eslint": "eslint . --fix",
     "lint": "run-s lint:*",
     "format": "prettier --write src/",
-    "standardize": "run-s type-check lint format",
+    "format:staged": "lint-staged",
+    "standardize": "run-s type-check lint format:staged",
     "commit": "BYPASS_PRECOMMIT=1 cz",
     "commit:check": "run-s standardize commit"
   },
@@ -26,7 +27,9 @@
       "prettier --write"
     ]
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "@vueuse/core": "^14.1.0",
     "lucide-vue-next": "^0.562.0",
