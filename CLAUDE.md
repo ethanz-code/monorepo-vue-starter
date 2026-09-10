@@ -36,7 +36,7 @@ The pre-commit hook (`.husky/pre-commit:4-14`) checks for the `BYPASS_PRECOMMIT`
 ### Tech Stack
 - **Runtime**: Bun as package manager and potential runtime
 - **Build Tool**: Rolldown-Vite (Vite with Rolldown bundler for faster builds)
-- **Framework**: Vue 3 with Composition API, Vue Router 4
+- **Framework**: Vue 3 with Composition API, Vue Router 5
 - **State Management**: Pinia via `@ethan-utils/pinia` wrapper (utility wrapper around Pinia)
 - **HTTP Client**: Axios via `@ethan-utils/axios` wrapper (utility wrapper around Axios)
 - **Styling**: TailwindCSS v4 (native Vite integration, no PostCSS config needed)
